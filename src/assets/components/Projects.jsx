@@ -1,6 +1,5 @@
 import Shadient from "../images/shadient.webp";
 import Cheffest from "../images/cheffest.webp";
-import Cobalt from "../images/cobalt.webp";
 import Whitepace from "../images/whitepace.webp";
 import HeroTravels from "../images/herotravels.webp";
 import Elecar from "../images/elecar.webp";
@@ -8,7 +7,7 @@ import Healthy from "../images/healthy.webp";
 import LaPizzaPopolare from "../images/la-pizza-popolare.webp";
 import TechShabaka from "../images/techshabaka.webp";
 import "../styles/projects.css";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 const Projects = () => {
   const sliderRef = useRef(null);
