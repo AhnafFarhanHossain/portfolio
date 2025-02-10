@@ -1,3 +1,38 @@
+:root {
+  --elements-bg: rgba(255, 255, 255, 0.03);
+  --section-label: rgba(255, 255, 255, 0.6);
+  --white: #fff;
+  --black: #000;
+  --border: #343a40;
+  --text: rgba(255, 255, 255, 0.8);
+  --mono-font: "Space Mono", monospace;
+}
+[data-theme="light"] {
+  --bg-primary: #ebebeb;
+  --bg-secondary: #ffffff;
+  --elements-bg: rgba(0, 0, 0, 0.02);
+  --section-label: rgba(33, 37, 41, 0.7);
+  --white: #212529;
+  --black: #fff;
+  --border: #dee2e6;
+  --text: rgb(0, 0, 0);
+  --text-primary: rgba(33, 37, 41, 0.95);
+}
+
+[data-theme="light"] .projects-arrow {
+  background: var(--elements-bg) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] .projects-arrow:hover {
+  background: var(--bg-secondary) !important;
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="light"] .projects-arrow i {
+  color: var(--text);
+}
+
 .projects {
   position: relative;
   padding: 140px 0;
@@ -31,6 +66,7 @@
 .projects-wrapper .card {
   flex: 0 0 calc(50% - 10px); /* changed to show 2 projects at once */
   scroll-snap-align: start;
+  background: var(--bg-secondary);
   /* ensure consistent card width */
 }
 

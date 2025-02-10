@@ -8,6 +8,7 @@ import Skills from "./assets/components/Skills";
 import Projects from "./assets/components/Projects";
 import Cta from "./assets/components/Cta";
 import Footer from "./assets/components/Footer";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   const lenis = useLenis(({ scroll }) => {
@@ -15,7 +16,7 @@ function App() {
   });
 
   return (
-    <>
+    <ThemeProvider>
       <ReactLenis root>{/* content */}</ReactLenis>
       <Header />
       <Main />
@@ -26,7 +27,7 @@ function App() {
       <Projects />
       <Cta />
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

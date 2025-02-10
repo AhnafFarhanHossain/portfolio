@@ -1,32 +1,28 @@
 import Shadient from "../images/shadient.webp";
 import Cheffest from "../images/cheffest.webp";
+import Cobalt from "../images/cobalt.webp";
 import Whitepace from "../images/whitepace.webp";
 import HeroTravels from "../images/herotravels.webp";
 import Elecar from "../images/elecar.webp";
-import Healthy from "../images/Healthy.webp";
+import Healthy from "../images/healthy.webp";
 import LaPizzaPopolare from "../images/la-pizza-popolare.webp";
-import TechShabaka from "../images/TechShabaka.webp";
+import TechShabaka from "../images/techshabaka.webp";
 import "../styles/projects.css";
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 const Projects = () => {
   const sliderRef = useRef(null);
+  const scrollByAmount = 300; // adjust as needed
 
   const scrollPrev = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollBy({
-        left: -sliderRef.current.clientWidth,
-        behavior: "smooth",
-      });
+      sliderRef.current.scrollBy({ left: -scrollByAmount, behavior: "smooth" });
     }
   };
 
   const scrollNext = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollBy({
-        left: sliderRef.current.clientWidth,
-        behavior: "smooth",
-      });
+      sliderRef.current.scrollBy({ left: scrollByAmount, behavior: "smooth" });
     }
   };
 

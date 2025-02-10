@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import "../styles/header.css";
+import { useTheme } from '../../contexts/ThemeContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -40,8 +42,8 @@ const Header = () => {
             </div>
           </div>
           <div className="right">
-            <button className="theme-toggle">
-              <i className="ri-moon-line" />
+            <button className="theme-toggle" onClick={toggleTheme}>
+              <i className={`ri-${theme === 'dark' ? 'sun' : 'moon'}-line`} />
             </button>
             <button className="menu-icon" onClick={toggleMenu}>
               <i className={`ri-${isMenuOpen ? "close" : "menu-3"}-line`} />

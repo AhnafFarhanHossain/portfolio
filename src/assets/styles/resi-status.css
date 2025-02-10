@@ -1,3 +1,24 @@
+:root {
+  --elements-bg: rgba(255, 255, 255, 0.03);
+  --section-label: rgba(255, 255, 255, 0.6);
+  --white: #fff;
+  --black: #000;
+  --border: #343a40;
+  --text: rgba(255, 255, 255, 0.8);
+  --mono-font: "Space Mono", monospace;
+}
+[data-theme="light"] {
+  --bg-primary: #ebebeb;
+  --bg-secondary: #ffffff;
+  --elements-bg: rgba(0, 0, 0, 0.02);
+  --section-label: rgba(33, 37, 41, 0.7);
+  --white: #212529;
+  --black: #fff;
+  --border: #dee2e6;
+  --text: rgb(0, 0, 0);
+  --text-primary: rgba(33, 37, 41, 0.95);
+}
+
 .resi-status {
   display: flex;
   justify-content: space-between;
