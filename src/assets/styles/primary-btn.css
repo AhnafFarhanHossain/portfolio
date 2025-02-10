@@ -1,0 +1,22 @@
+.primary-btn {
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: var(--mono-font);
+  letter-spacing: -0.02em;
+  background: var(--white);
+  color: var(--black);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+  }
+}

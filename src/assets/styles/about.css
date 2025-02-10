@@ -1,0 +1,99 @@
+.about {
+  width: 100%;
+  padding: 120px 20px;
+}
+
+.about .container {
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-text {
+  padding-right: 40px;
+}
+
+.section-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: var(--mono-font);
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: var(--mono-font);
+  letter-spacing: -0.03em;
+}
+
+.about-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 24px;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 2px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.about-image img:hover {
+  filter: grayscale(0%);
+}
+
+.cta-wrapper {
+  margin-top: 40px;
+}
+
+@media (max-width: 968px) {
+  .about {
+    padding: 80px 20px;
+    max-width: 100%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    place-items: center;
+  }
+
+  .about-text {
+    padding-right: 0;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-image {
+    order: -1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h2 {
+    font-size: 1.75rem;
+  }
+}
+/* About Section Styles End */

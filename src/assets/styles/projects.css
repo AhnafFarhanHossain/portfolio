@@ -1,0 +1,236 @@
+.projects {
+  position: relative;
+  padding: 140px 0;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.projects .container {
+  position: relative; /* ensure container is relative */
+  width: 100%;
+  max-width: 1340px; /* limit container width */
+  margin: 0 auto;
+}
+
+/* Update slider container styles to use the original className */
+.projects-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 2rem 0;
+  scroll-behavior: smooth;
+  max-width: 1320px; /* limit slider width */
+  margin: 0 auto;
+}
+.projects-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.projects-wrapper .card {
+  flex: 0 0 calc(50% - 10px); /* changed to show 2 projects at once */
+  scroll-snap-align: start;
+  /* ensure consistent card width */
+}
+
+/* Remove or override the old .projects-controls styling */
+
+/* Position arrow buttons on the sides of the cards */
+.projects-arrow.prev {
+  position: absolute;
+  left: calc(50% - 660px - 80px); /* 660px = 1320px/2, extra offset 60px */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: auto;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease;
+  color: var(--white) !important;
+  /* retain other styling (background, border, etc.) */
+}
+
+.projects-arrow.next {
+  position: absolute;
+  right: calc(50% - 660px - 80px);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: auto;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease;
+  color: var(--white) !important;
+  /* retain other styling (background, border, etc.) */
+}
+
+/* Updated slider controls selectors: Position arrows at the sides */
+.projects-controls {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  transform: translateY(-50%); /* only vertical centering */
+  z-index: 100; /* increase stacking */
+}
+
+.projects-arrow {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+.projects-arrow svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+.projects-arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Updated card styles for grid layout */
+.projects-wrapper .card {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  padding: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+  /* Removed width, margin, and scroll-snap properties */
+}
+
+.projects-wrapper .card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Card Top Section */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-top h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  font-family: var(--mono-font);
+  letter-spacing: -0.02em;
+}
+
+.card-top a {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-top a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Card Content */
+.projects-wrapper .card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+/* Tech Stack */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-stack span {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: var(--mono-font);
+  letter-spacing: -0.02em;
+}
+
+/* Project Image */
+.projects-wrapper .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projects-wrapper .card:hover img {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .projects {
+    padding: 80px 20px;
+  }
+}
+
+/* Adjust grid layout for mobile */
+@media (max-width: 768px) {
+  .projects .container {
+    padding: 0 15px;
+  }
+
+  .projects-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .projects-wrapper .card {
+    flex: 0 0 100%;
+  }
+  .projects-arrow {
+    display: none;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .projects-arrow.prev {
+    left: 10px; /* reposition inside viewport */
+  }
+  .projects-arrow.next {
+    right: 10px; /* reposition inside viewport */
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1320px) {
+  .projects-arrow.prev {
+    left: 10px;
+  }
+  .projects-arrow.next {
+    right: 10px;
+  }
+}
