@@ -5,7 +5,7 @@ import HeroTravels from "../images/herotravels.webp";
 import Elecar from "../images/elecar.webp";
 import Healthy from "../images/Healthy.webp";
 import LaPizzaPopolare from "../images/la-pizza-popolare.webp";
-import TechShabaka from "../images/Techshabaka.webp";
+import TechShabaka from "../images/TechShabaka.webp";
 import "../styles/projects.css";
 import { useRef } from "react";
 
