@@ -2,7 +2,7 @@ import "../../styles/primary-btn.css";
 
 const PrimaryButton = ({props}) => {
   return (
-    <button className="primary-btn">Get in Touch</button>
+    <a className="primary-btn" href="mailto:ahnaffarhanhossain@gmail.com" >Get in Touch</a>
   )
 }
 

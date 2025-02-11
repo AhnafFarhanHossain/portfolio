@@ -1,0 +1,12 @@
+.projects-wrapper {
+    /* Ensure the slider container displays items horizontally */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* Optional: adjust gap between cards */
+    gap: 1rem;
+}
+
+/* Add styles for light mode so that the next/prev buttons are visible */
+

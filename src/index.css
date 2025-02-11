@@ -265,9 +265,6 @@ body {
   color: var(--text);
 }
 /* Light Mode Footer Styles */
-[data-theme="light"] footer {
-  background: var(--bg-primary) !important;
-}
 
 [data-theme="light"] footer .footer-box h1 {
   color: var(--text);
