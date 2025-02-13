@@ -20,7 +20,7 @@ const Footer = () => {
               <a href="mailto:ahnaffarhanhossain@gmail.com">
                 <i className="ri-mail-line" /> ahnaffarhanhossain@gmail.com
               </a>
-              <a href="tel:+8801756029009">
+              <a href="tel:+88018861554469">
                 <i className="ri-phone-line" /> +880 1886 155446
               </a>
             </div>
