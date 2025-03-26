@@ -457,6 +457,24 @@ main {
   width: 100%;
   color: rgb(243, 243, 243, 0.9);
 }
+.main-subtext {
+  position: absolute;
+  max-width: 300px;
+  text-align: right;
+  bottom: 100px;
+  right: 4%;
+}
+.main-subtext.first {
+  position: absolute;
+  max-width: 300px;
+  text-align: left;
+  top: 150px;
+  left: 4%;
+}
+.main-subtext p {
+  font-size: 12px !important;
+  color: var(--text);
+}
 /* Main Heading Styles End */
 @media (max-width: 1024px) {
   .main-heading {

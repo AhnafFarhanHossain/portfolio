@@ -17,7 +17,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <ReactLenis root>{/* content */}</ReactLenis>
+      <ReactLenis root></ReactLenis>
       <Header />
       <Main />
       <ResiStatus />
