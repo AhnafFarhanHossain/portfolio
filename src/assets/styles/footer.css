@@ -175,4 +175,7 @@ footer {
     flex-direction: column;
     gap: 0.75rem;
   }
+  .footer .container .footer-box h1 {
+    font-size: 2rem;
+  }
 }

@@ -234,6 +234,9 @@
   .projects-arrow {
     display: none;
   }
+  .projects .section-headings h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Responsive adjustments */

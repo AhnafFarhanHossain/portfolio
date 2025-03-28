@@ -23,6 +23,7 @@
   position: relative;
   padding: 80px 0;
   width: 100%;
+  border-bottom: 1px solid var(--border);
 
   .container {
     margin: 0 auto;
@@ -121,6 +122,9 @@
 }
 
 @media (max-width: 768px) {
+  .skills .container {
+    margin-top: 40px;
+  }
   .skill-card {
     padding: 1.5rem;
   }
@@ -143,6 +147,9 @@
 
   .skills .container .card-wrapper {
     grid-template-columns: 1fr;
+  }
+  .skills .section-headings h1 {
+    font-size: 2rem;
   }
 }
 @media (max-width: 1340px) {

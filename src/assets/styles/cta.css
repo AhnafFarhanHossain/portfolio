@@ -22,11 +22,13 @@
 .cta {
   width: 100%;
   max-width: 1340px;
-  padding: 120px 20px;
-  background: #111111;
+  padding: 140px 20px;
+  background: linear-gradient(135deg, rgba(17,17,17,0.9) 0%, rgba(17,17,17,0.95) 100%);
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .cta .container {
@@ -55,9 +57,23 @@
   line-height: 1.2;
   margin: 0 0 24px 0;
   font-weight: 700;
-  color: var(--white);
   font-family: var(--mono-font);
   letter-spacing: -0.03em;
+  color: var(--white);
+}
+
+[data-theme="light"] .cta h2 {
+  background: linear-gradient(90deg, var(--white) 0%, rgba(33,37,41,0.8) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .cta h2 {
+  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cta p {
@@ -68,6 +84,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0.9;
 }
 
 .cta-actions {
@@ -92,11 +109,34 @@
 .primary-btn {
   background: var(--white);
   color: var(--black);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.primary-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  z-index: -1;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.primary-btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .primary-btn:hover {
-  background: rgba(255, 255, 255, 0.9);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   color: var(--black);
 }
 
@@ -104,11 +144,33 @@
   background: transparent;
   color: var(--white);
   border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.secondary-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+  z-index: -1;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.secondary-btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .secondary-btn:hover {
-  background: rgba(255, 255, 255, 0.05);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) {
@@ -116,19 +178,26 @@
     padding: 80px 20px;
   }
 
-  .cta h2 {
-    font-size: 2rem;
-  }
+.cta h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+  font-weight: 700;
+  font-family: var(--mono-font);
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
 
-  .cta-actions {
-    flex-direction: column;
-    gap: 16px;
-  }
+[data-theme="dark"] .cta h2 {
+  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .primary-btn,
-  .secondary-btn {
-    text-align: center;
-  }
+[data-theme="light"] .cta h2 {
+  color: var(--text-primary);
+}
 }
 
 @media (max-width: 480px) {
