@@ -5,7 +5,7 @@
   --black: #000;
   --border: #343a40;
   --text: rgba(255, 255, 255, 0.8);
-  --mono-font: "Space Mono", monospace;
+  --mono-font: "Unnamed", monospace;
 }
 [data-theme="light"] {
   --bg-primary: #ebebeb;
@@ -29,7 +29,7 @@
 }
 
 .section-headings h3 {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.6);
@@ -46,4 +46,52 @@
   color: #ffffff;
   font-family: var(--mono-font);
   letter-spacing: -0.03em;
+}
+
+/* Responsive adjustments for section headings */
+@media (max-width: 1200px) {
+  .section-headings h1 {
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-headings h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .section-headings h3 {
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-headings h1 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    letter-spacing: -0.02em;
+  }
+
+  .section-headings h3 {
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-headings h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+
+  .section-headings h3 {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
 }

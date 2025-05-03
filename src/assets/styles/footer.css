@@ -5,7 +5,7 @@
   --black: #000;
   --border: #343a40;
   --text: rgba(255, 255, 255, 0.8);
-  --mono-font: "Space Mono", monospace;
+  --mono-font: "Unnamed", monospace;
 }
 [data-theme="light"] {
   --bg-primary: #ebebeb;
@@ -32,7 +32,7 @@ footer {
 }
 .footer .container .footer-box h1 {
   font-size: 2.8rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Unnamed", sans-serif;
   font-weight: 100;
 }
 .footer .container .footer-bottom {

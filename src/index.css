@@ -5,13 +5,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Unnamed", sans-serif;
   opacity: 1 !important;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Responsive Typography Base Styles */
+html {
+  font-size: 16px; /* Base font size */
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 /* Body */
 body {
   width: 100%;
@@ -31,10 +63,12 @@ body {
   letter-spacing: 0.3px;
   transition: opacity 0.3s ease;
 }
+
 @font-face {
   font-family: "SILVERFAKE REGULAR 400";
   src: url("assets/fonts/SILVERFAKE REGULAR 400.OTF");
 }
+
 :root {
   --elements-bg: rgba(255, 255, 255, 0.03);
   --section-label: rgba(255, 255, 255, 0.6);
@@ -42,8 +76,9 @@ body {
   --black: #000;
   --border: #343a40;
   --text: rgba(255, 255, 255, 0.8);
-  --mono-font: "Space Mono", monospace;
+  --mono-font: "Unnamed", monospace;
 }
+
 /* Light Theme Variables */
 [data-theme="light"] {
   --bg-primary: #ebebeb;
@@ -224,7 +259,6 @@ body {
   background: rgba(0, 0, 0, 0.03);
   border-color: rgba(0, 0, 0, 0.1);
 }
-
 
 /* Root Variables End */
 /* Light Mode CTA Section Styles */
@@ -420,7 +454,7 @@ a:hover {
 /* Paragraph Styles Start */
 p {
   line-height: 1.5;
-  font-size: 14px !important;
+  font-size: 0.875rem !important;
 }
 /* Paragraph Styles End */
 
@@ -446,9 +480,10 @@ main {
   letter-spacing: 1;
   padding-bottom: 20vh;
 }
+
 /* Main Heading Styles Start */
 .main-heading {
-  font-size: clamp(2.5rem, 8vw, 4.6rem);
+  font-size: clamp(2rem, 8vw, 4.6rem);
   letter-spacing: -0.05em;
   font-family: "SILVERFAKE REGULAR 400";
   margin-top: 100px;
@@ -457,40 +492,127 @@ main {
   width: 100%;
   color: rgb(243, 243, 243, 0.9);
 }
+
 .main-subtext {
   position: absolute;
   max-width: 300px;
   text-align: right;
   bottom: 100px;
   right: 4%;
+  font-size: 0.875rem;
 }
+
 .main-subtext.first {
   position: absolute;
   max-width: 300px;
   text-align: left;
   top: 150px;
   left: 4%;
+  font-size: 0.875rem;
 }
+
 .main-subtext p {
-  font-size: 12px !important;
+  font-size: 0.75rem !important;
   color: var(--text);
 }
+
 /* Main Heading Styles End */
 @media (max-width: 1024px) {
   .main-heading {
     max-width: 600px;
   }
-}
-@media (max-width: 768px) {
-  .main-heading {
-    max-width: 400px;
-  }
+
   .section-headings h1 {
-    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    font-size: 2.2rem;
   }
+
   .section-headings h3 {
-    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-size: 1rem;
+  }
+
+  .about-text h2,
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .about-description p,
+  .cta p {
+    font-size: 0.875rem !important;
+  }
+
+  .footer .container .footer-box h1 {
+    font-size: 2.2rem;
   }
 }
 
-/* Main Styles End */
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 10vh;
+  }
+
+  .main-heading {
+    max-width: 400px;
+    font-size: clamp(1.7rem, 7vw, 2.5rem);
+    margin-top: 80px;
+  }
+
+  .main-subtext {
+    max-width: 250px;
+    bottom: 80px;
+  }
+
+  .main-subtext.first {
+    max-width: 250px;
+    top: 120px;
+  }
+
+  .section-headings h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 30px;
+  }
+
+  .section-headings h3 {
+    font-size: clamp(0.8rem, 4vw, 0.9rem);
+    margin-bottom: 15px;
+  }
+
+  .skill-card h2 {
+    font-size: 0.95rem;
+  }
+
+  .card-top h2 {
+    font-size: 1rem;
+  }
+
+  .footer-nav a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    margin-top: 60px;
+  }
+
+  .main-subtext {
+    max-width: 200px;
+    bottom: 60px;
+    right: 3%;
+  }
+
+  .main-subtext.first {
+    max-width: 200px;
+    top: 100px;
+    left: 3%;
+  }
+
+  .main-subtext p {
+    font-size: 0.7rem !important;
+  }
+
+  .footer-socials a,
+  .contact-info a {
+    font-size: 0.8rem;
+  }
+}

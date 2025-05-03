@@ -5,7 +5,7 @@
   --black: #000;
   --border: #343a40;
   --text: rgba(255, 255, 255, 0.8);
-  --mono-font: "Space Mono", monospace;
+  --mono-font: "Unnamed", monospace;
 }
 [data-theme="light"] {
   --bg-primary: #ebebeb;
@@ -45,7 +45,7 @@
 }
 
 .section-label {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.6);
@@ -65,14 +65,18 @@
 }
 
 [data-theme="light"] .about-text h2 {
-  background: linear-gradient(90deg, var(--white) 0%, rgba(33,37,41,0.8) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--white) 0%,
+    rgba(33, 37, 41, 0.8) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 [data-theme="dark"] .about-text h2 {
-  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -95,11 +99,11 @@
   border-radius: 4px;
   border: 1px solid var(--border);
   transition: all 0.4s ease;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .about-image::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -120,6 +124,25 @@
   margin-top: 40px;
 }
 
+@media (max-width: 1024px) {
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about-grid {
+    gap: 60px;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .about-description p {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 968px) {
   .about {
     padding: 60px 20px;
@@ -137,7 +160,11 @@
   }
 
   .about-text h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .about-description p {
+    font-size: 0.95rem;
   }
 
   .about-image {
@@ -148,8 +175,31 @@
 }
 
 @media (max-width: 480px) {
+  .about {
+    padding: 50px 15px;
+  }
+
   .about-text h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .about-description p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  .section-label {
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+  }
+
+  .about-grid {
+    gap: 30px;
+  }
+
+  .about-image::before {
+    top: 7px;
+    left: 7px;
   }
 }
-/* About Section Styles End */
