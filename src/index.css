@@ -1,9 +1,6 @@
-@font-face {
-  font-family: "Unnamed";
-  src: url("assets/fonts/HEMING VARIABLE.TTF") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -430,7 +427,7 @@ img {
 
 /* Container Styles Start */
 .container {
-  max-width: 1340px;
+  max-width: 95%;
   margin: 0 auto;
   width: 100%;
   position: relative;
@@ -460,6 +457,12 @@ p {
   line-height: 1.5;
   font-size: 0.875rem !important;
 }
+
+@media (min-width: 1340px) {
+  p {
+    font-size: 1rem !important;
+  }
+}
 /* Paragraph Styles End */
 
 /* App Styles Start */
@@ -475,10 +478,12 @@ main {
   flex: 1;
   min-height: 110vh;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   width: 100%;
-  font-family: "SILVERFAKE REGULAR 400";
+  max-width: 93%;
+  margin: 0 auto;
+  font-family: "Unnamed";
   font-weight: 100;
   user-select: none;
   letter-spacing: 1;
@@ -487,14 +492,23 @@ main {
 
 /* Main Heading Styles Start */
 .main-heading {
-  font-size: clamp(2rem, 8vw, 4.6rem);
-  letter-spacing: -0.05em;
-  font-family: "SILVERFAKE REGULAR 400";
-  margin-top: 100px;
+  font-size: 2.8vw;
+  font-family: "Unnamed";
+  margin-top: 140px;
   padding: 0 20px;
-  text-align: center;
+  text-align: left;
   width: 100%;
   color: rgb(243, 243, 243, 0.9);
+
+  b {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: clamp(2.5rem, 7vw, 3.5rem);
+  }
 }
 
 .main-subtext {
@@ -510,7 +524,7 @@ main {
   position: absolute;
   max-width: 300px;
   text-align: left;
-  top: 150px;
+  bottom: 100px;
   left: 4%;
   font-size: 0.875rem;
 }
@@ -518,6 +532,15 @@ main {
 .main-subtext p {
   font-size: 0.75rem !important;
   color: var(--text);
+}
+
+@media (min-width: 1340px) {
+  .main-subtext {
+    max-width: 350px;
+  }
+  .main-subtext p {
+    font-size: 0.89rem !important;
+  }
 }
 
 /* Main Heading Styles End */
@@ -557,7 +580,7 @@ main {
   .main-heading {
     max-width: 400px;
     font-size: clamp(1.7rem, 7vw, 2.5rem);
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
   .main-subtext {
@@ -567,7 +590,7 @@ main {
 
   .main-subtext.first {
     max-width: 250px;
-    top: 120px;
+    bottom: 80px;
   }
 
   .section-headings h1 {
@@ -596,18 +619,18 @@ main {
 @media (max-width: 576px) {
   .main-heading {
     font-size: clamp(1.5rem, 6vw, 2.2rem);
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   .main-subtext {
-    max-width: 200px;
+    max-width: 100px;
     bottom: 60px;
     right: 3%;
   }
 
   .main-subtext.first {
-    max-width: 200px;
-    top: 100px;
+    max-width: 100px;
+    bottom: 100px;
     left: 3%;
   }
 
