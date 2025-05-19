@@ -146,11 +146,11 @@
 }
 
 .card-top h2 {
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--text);
   margin: 0;
-  letter-spacing: 0;
+  letter-spacing: -0.05em;
 }
 
 .card-top a {
