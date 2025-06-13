@@ -1,4 +1,5 @@
 import zenflow from "../images/zenflow.png";
+import colortailor from "../images/colortailor.png";
 import "../styles/projects.css";
 import { useRef } from "react";
 
@@ -17,6 +18,20 @@ const projects = [
       "Supabase",
     ],
   },
+  {
+    name: "ColorTailor - AI Color Palette Generator",
+    description: 
+      "ColorTailor is an AI-powered color palette generator that helps you create beautiful color schemes for your projects. Just input your keywords, and let the AI do the rest!",
+    image: colortailor,
+    link: "https://colortailorai.vercel.app",
+    techStack: [
+      "React JS",
+      "Next JS",
+      "Tailwind CSS",
+      "OpenRouter API",
+      "Vercel",
+    ],
+  }
 ];
 
 const Projects = () => {

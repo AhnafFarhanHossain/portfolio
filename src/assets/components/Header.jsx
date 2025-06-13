@@ -56,6 +56,7 @@ const Header = () => {
           <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
           <a href="#cta">Contact</a>
           <a
             href="https://www.linkedin.com/in/ahnaf-farhan-hossain-715893305/"
