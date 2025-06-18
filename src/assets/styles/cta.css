@@ -185,7 +185,7 @@
   .primary-btn,
   .secondary-btn {
     padding: 14px 28px;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -203,11 +203,10 @@
     letter-spacing: -0.03em;
     color: var(--white);
   }
-
   .primary-btn,
   .secondary-btn {
     padding: 12px 24px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .cta-actions {
@@ -230,7 +229,7 @@
   .primary-btn,
   .secondary-btn {
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .cta-actions {
@@ -250,10 +249,9 @@
   .cta h2 {
     font-size: 1.75rem;
   }
-
   .primary-btn,
   .secondary-btn {
     padding: 9px 18px;
-    font-size: 12px;
+    font-size: 13px;
   }
 }

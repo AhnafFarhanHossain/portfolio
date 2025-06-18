@@ -12,16 +12,15 @@
   <title>Ahnaf Farhan's Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+  
   <!-- Preload local fonts for optimal performance -->
   <link rel="preload" href="src/assets/fonts/HEMING VARIABLE.TTF" as="font" type="font/ttf" crossorigin>
-
+  <link rel="preload" href="src/assets/fonts/SILVERFAKE REGULAR 400.OTF" as="font" type="font/otf" crossorigin>
+  
   <!-- Optimized Google Fonts with display=swap for fast loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,12 +33,12 @@
   <!-- Add these before closing head tag -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+  
   <!-- Font loading optimization -->
   <script>
     // Optimize font loading by detecting if fonts are loaded
     if ('fonts' in document) {
-      document.fonts.ready.then(function () {
+      document.fonts.ready.then(function() {
         document.body.classList.add('fonts-loaded');
       });
     }

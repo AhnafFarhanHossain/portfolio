@@ -23,6 +23,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "SILVERFAKE REGULAR 400";
+  src: url("assets/fonts/SILVERFAKE REGULAR 400.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,25 +53,25 @@ html {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 576px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 

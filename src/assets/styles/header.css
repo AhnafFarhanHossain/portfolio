@@ -182,16 +182,15 @@ nav {
   .logo i {
     font-size: 1.1rem;
   }
-
   .menu-icon,
   .theme-toggle {
     padding: 8px 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .menu-icon i,
   .theme-toggle i {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .right {
@@ -207,10 +206,9 @@ nav {
     top: 80px;
     padding: 20px 40px;
   }
-
   .overlay a {
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -219,24 +217,23 @@ nav {
     width: 92%;
     padding: 0.7rem;
   }
-
   .logo {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .logo i {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .menu-icon,
   .theme-toggle {
     padding: 7px 8px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .menu-icon i,
   .theme-toggle i {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .right {
@@ -251,10 +248,9 @@ nav {
     right: 10px;
     padding: 15px 30px;
   }
-
   .overlay a {
     padding: 7px 14px;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 

@@ -164,9 +164,8 @@
   .about-text h2 {
     font-size: 1.8rem;
   }
-
   .about-description p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .about-image {
@@ -185,14 +184,13 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
-
   .about-description p {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
     line-height: 1.6;
   }
 
   .section-label {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-bottom: 15px;
   }
 

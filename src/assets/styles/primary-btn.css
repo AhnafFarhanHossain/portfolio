@@ -46,27 +46,27 @@
 @media (max-width: 992px) {
   .primary-btn {
     padding: 11px 22px;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .primary-btn {
     padding: 10px 20px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 576px) {
   .primary-btn {
     padding: 9px 18px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .primary-btn {
     padding: 8px 16px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
