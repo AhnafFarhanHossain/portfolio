@@ -218,22 +218,22 @@ nav {
     padding: 0.7rem;
   }
   .logo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .logo i {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .menu-icon,
   .theme-toggle {
     padding: 7px 8px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .menu-icon i,
   .theme-toggle i {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .right {
@@ -344,7 +344,7 @@ nav {
   }
 
   .overlay a {
-    font-size: 13px;
+    font-size: 14px;
     padding: 8px 16px;
   }
 }
@@ -364,7 +364,7 @@ nav {
   }
 
   .overlay a {
-    font-size: 12px;
+    font-size: 14px;
     padding: 7px 14px;
     border-radius: 6px;
   }

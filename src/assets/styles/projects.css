@@ -282,13 +282,9 @@
     padding: 60px 15px;
   }
 
-  .projects .container {
-    padding: 0 15px;
-  }
-
   .projects-wrapper .card {
     flex: 0 0 calc(100% - 10px);
-    padding: 1rem;
+    padding: 1.4rem;
   }
   .card-top h2 {
     font-size: 1rem;

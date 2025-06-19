@@ -111,7 +111,7 @@
 }
 
 @media (max-width: 1024px) {
-  .skills .container .cardz-wrapper {
+  .skills .container .card-wrapper {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
   }
@@ -139,7 +139,6 @@
 @media (max-width: 768px) {
   .skills .container {
     margin-top: 20px;
-    padding: 0 20px;
   }
 
   .skills {
@@ -171,7 +170,7 @@
     }
   }
   .skill-card h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
