@@ -12,15 +12,15 @@
 }
 
 [data-theme="light"] {
-  --bg-primary: #ebebeb;
+  --bg-primary: #f8f9fa;
   --bg-secondary: #ffffff;
-  --elements-bg: rgba(0, 0, 0, 0.02);
-  --section-label: rgba(33, 37, 41, 0.7);
-  --white: #212529;
+  --elements-bg: rgba(0, 0, 0, 0.04);
+  --section-label: rgba(33, 37, 41, 0.8);
+  --white: #1a1a1a;
   --black: #fff;
-  --border: #dee2e6;
-  --text: rgb(0, 0, 0);
-  --text-primary: rgba(33, 37, 41, 0.95);
+  --border: #e0e0e0;
+  --text: #2c2c2c;
+  --text-primary: #1a1a1a;
 }
 
 .resi-status {
@@ -89,6 +89,14 @@
   font-family: var(--mono-font);
 }
 
+/* Light mode styles for status pill */
+[data-theme="light"] .status-pill {
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #1a1a1a;
+  box-shadow: none;
+}
+
 @media (max-width: 576px) {
   .status-pill {
     padding: 6px 12px;
@@ -120,10 +128,22 @@
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
 }
 
+/* Light mode hover styles */
+[data-theme="light"] .status-pill:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+
 .status-text {
   white-space: nowrap;
   font-family: var(--mono-font);
   font-weight: 600;
+}
+
+/* Light mode text color */
+[data-theme="light"] .status-text {
+  color: #1a1a1a;
 }
 
 /* Flag styling */

@@ -181,6 +181,15 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Light mode styles - remove shadows */
+[data-theme="light"] .primary-btn:hover {
+  box-shadow: none;
+}
+
+[data-theme="light"] .secondary-btn:hover {
+  box-shadow: none;
+}
+
 @media (max-width: 992px) {
   .primary-btn,
   .secondary-btn {

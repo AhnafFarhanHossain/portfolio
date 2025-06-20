@@ -8,15 +8,15 @@
   --mono-font: "Unnamed", monospace;
 }
 [data-theme="light"] {
-  --bg-primary: #ebebeb;
+  --bg-primary: #f8f9fa;
   --bg-secondary: #ffffff;
-  --elements-bg: rgba(0, 0, 0, 0.02);
-  --section-label: rgba(33, 37, 41, 0.7);
-  --white: #212529;
+  --elements-bg: rgba(0, 0, 0, 0.04);
+  --section-label: rgba(33, 37, 41, 0.8);
+  --white: #1a1a1a;
   --black: #fff;
-  --border: #dee2e6;
-  --text: rgb(0, 0, 0);
-  --text-primary: rgba(33, 37, 41, 0.95);
+  --border: #e0e0e0;
+  --text: #2c2c2c;
+  --text-primary: #1a1a1a;
 }
 
 .primary-btn {
