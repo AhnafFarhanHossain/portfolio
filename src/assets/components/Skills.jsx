@@ -6,8 +6,8 @@ const Skills = () => {
     <section className="skills" id="skills">
       <div className="container">
         <div className="section-headings">
-          <h3>Skills and Expertise</h3>
-          <h1>Discover the skills and expertise I bring to the table.</h1>
+          <h3>Tech Stack</h3>
+          <h1>Technologies that I leverage to craft cutting-edge web experiences.</h1>
         </div>
         <div className="card-wrapper">
           <div className="skill-card">
