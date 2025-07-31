@@ -6,6 +6,7 @@
   --border: #343a40;
   --text: rgba(255, 255, 255, 0.8);
   --mono-font: "Unnamed", monospace;
+  --accent-color: #00d4aa;
 }
 [data-theme="light"] {
   --bg-primary: #ebebeb;
@@ -17,6 +18,7 @@
   --border: #dee2e6;
   --text: rgb(0, 0, 0);
   --text-primary: rgba(33, 37, 41, 0.95);
+  --accent-color: #20c997;
 }
 
 .skills {
@@ -27,6 +29,62 @@
 
   .container {
     margin: 0 auto;
+
+    .section-headings {
+      text-align: left;
+      margin-bottom: 60px;
+      max-width: 800px;
+
+      h3 {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--section-label);
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-family: var(--mono-font);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin: 0 0 30px 0;
+        font-weight: 700;
+        font-family: var(--mono-font);
+        letter-spacing: -0.03em;
+        color: var(--white);
+      }
+
+      [data-theme="light"] h1 {
+        background: linear-gradient(
+          90deg,
+          var(--white) 0%,
+          rgba(33, 37, 41, 0.8) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      [data-theme="dark"] h1 {
+        background: linear-gradient(
+          90deg,
+          #fff 0%,
+          rgba(255, 255, 255, 0.8) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .section-description {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--text);
+        opacity: 0.9;
+        max-width: 700px;
+      }
+    }
 
     .card-wrapper {
       display: grid;
@@ -63,7 +121,12 @@
 
   &:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(0, 212, 170, 0.3);
+    transform: translateY(-2px);
+  }
+
+  [data-theme="light"] &:hover {
+    border-color: rgba(32, 201, 151, 0.3);
   }
 
   h2 {

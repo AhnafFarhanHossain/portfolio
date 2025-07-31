@@ -20,7 +20,7 @@ const projects = [
   },
   {
     name: "ColorTailor - AI Color Palette Generator",
-    description: 
+    description:
       "ColorTailor is an AI-powered color palette generator that helps you create beautiful color schemes for your projects. Just input your keywords, and let the AI do the rest!",
     image: colortailor,
     link: "https://colortailorai.vercel.app",
@@ -31,7 +31,7 @@ const projects = [
       "OpenRouter API",
       "Vercel",
     ],
-  }
+  },
 ];
 
 const Projects = () => {
@@ -63,6 +63,11 @@ const Projects = () => {
         <div className="section-headings">
           <h3>Featured Projects</h3>
           <h1>Showcasing My Finest Work</h1>
+          <p className="section-description">
+            A curated collection of my most impactful projects, demonstrating my
+            expertise in modern web development and innovative problem-solving
+            approaches.
+          </p>
         </div>
         <div className="projects-controls">
           <button className="projects-arrow prev" onClick={scrollPrev}>
@@ -110,14 +115,10 @@ const Projects = () => {
                   </svg>
                 </a>
               </div>
-              <p>
-                {project.description}
-              </p>
+              <p>{project.description}</p>
               <div className="tech-stack">
                 {project.techStack.map((tech, index) => (
-                  <span key={index}>
-                    {tech}
-                  </span>
+                  <span key={index}>{tech}</span>
                 ))}
               </div>
               <img src={project.image} alt={project.name} />

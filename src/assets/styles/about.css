@@ -6,6 +6,7 @@
   --border: #343a40;
   --text: rgba(255, 255, 255, 0.8);
   --mono-font: "Unnamed", monospace;
+  --accent-color: #00d4aa;
 }
 [data-theme="light"] {
   --bg-primary: #ebebeb;
@@ -17,6 +18,7 @@
   --border: #dee2e6;
   --text: rgb(0, 0, 0);
   --text-primary: rgba(33, 37, 41, 0.95);
+  --accent-color: #20c997;
 }
 
 .about {
@@ -123,6 +125,11 @@
 .about-image:hover::before {
   top: 8px;
   left: 8px;
+  border-color: rgba(0, 212, 170, 0.3);
+}
+
+[data-theme="light"] .about-image:hover::before {
+  border-color: rgba(32, 201, 151, 0.3);
 }
 
 .cta-wrapper {

@@ -6,6 +6,7 @@
   --border: #343a40;
   --text: rgba(255, 255, 255, 0.8);
   --mono-font: "Unnamed", monospace;
+  --accent-color: #00d4aa;
 }
 [data-theme="light"] {
   --bg-primary: #ebebeb;
@@ -17,6 +18,7 @@
   --border: #dee2e6;
   --text: rgb(0, 0, 0);
   --text-primary: rgba(33, 37, 41, 0.95);
+  --accent-color: #20c997;
 }
 
 .projects {
@@ -33,6 +35,58 @@
   width: 100%;
   max-width: 93%; /* limit container width */
   margin: 0 auto;
+}
+
+.projects .section-headings {
+  text-align: left;
+  margin-bottom: 60px;
+  max-width: 800px;
+}
+
+.projects .section-headings h3 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--section-label);
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: var(--mono-font);
+}
+
+.projects .section-headings h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 30px 0;
+  font-weight: 700;
+  font-family: var(--mono-font);
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+
+[data-theme="light"] .projects .section-headings h1 {
+  background: linear-gradient(
+    90deg,
+    var(--white) 0%,
+    rgba(33, 37, 41, 0.8) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .projects .section-headings h1 {
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects .section-headings .section-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+  opacity: 0.9;
+  max-width: 700px;
 }
 
 /* Update slider container styles to use the original className */
@@ -134,7 +188,12 @@
 
 .projects-wrapper .card:hover {
   background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(0, 212, 170, 0.2);
+  transform: translateY(-3px);
+}
+
+[data-theme="light"] .projects-wrapper .card:hover {
+  border-color: rgba(32, 201, 151, 0.2);
 }
 
 /* Card Top Section */
@@ -166,8 +225,15 @@
 }
 
 .card-top a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 212, 170, 0.1);
+  border-color: rgba(0, 212, 170, 0.3);
   transform: translateY(-2px);
+  color: var(--accent-color);
+}
+
+[data-theme="light"] .card-top a:hover {
+  background: rgba(32, 201, 151, 0.1);
+  border-color: rgba(32, 201, 151, 0.3);
 }
 
 /* Card Content */
@@ -185,6 +251,10 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 2rem;
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .tech-stack span {

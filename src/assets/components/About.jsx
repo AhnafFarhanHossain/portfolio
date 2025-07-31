@@ -9,7 +9,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-text">
             <div className="section-label">About</div>
-            <h2>MERN Stack Engineer and Designer at TechShabaka.</h2>
+            <h2>MERN Stack Engineer and Designer at Aribaas.</h2>
             <div className="about-description">
               <p>
                 I am a passionate web designer and developer with a proven track

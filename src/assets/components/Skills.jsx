@@ -7,7 +7,14 @@ const Skills = () => {
       <div className="container">
         <div className="section-headings">
           <h3>Tech Stack</h3>
-          <h1>Technologies that I leverage to craft cutting-edge web experiences.</h1>
+          <h1>
+            Technologies that I leverage to craft cutting-edge web experiences.
+          </h1>
+          <p className="section-description">
+            My technical expertise spans across modern web technologies, from
+            front-end frameworks to back-end solutions, enabling me to build
+            comprehensive and scalable applications.
+          </p>
         </div>
         <div className="card-wrapper">
           <div className="skill-card">

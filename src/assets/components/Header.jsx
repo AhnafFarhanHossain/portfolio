@@ -11,6 +11,10 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   // Handle clicks outside menu to close it
   useEffect(() => {
     const closeMenu = (e) => {
@@ -53,14 +57,29 @@ const Header = () => {
       </header>
       <div className={`overlay ${!isMenuOpen ? "hidden" : ""}`}>
         <div className="overlay-content">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#cta">Contact</a>
+          <a href="#" onClick={closeMenu}>
+            Home
+          </a>
+          <a href="#about" onClick={closeMenu}>
+            About
+          </a>
+          <a href="#experience" onClick={closeMenu}>
+            Experience
+          </a>
+          <a href="#skills" onClick={closeMenu}>
+            Skills
+          </a>
+          <a href="#projects" onClick={closeMenu}>
+            Projects
+          </a>
+          <a href="#cta" onClick={closeMenu}>
+            Contact
+          </a>
           <a
             href="https://www.linkedin.com/in/ahnaf-farhan-hossain-715893305/"
             className="secondary-btn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Hire Me
           </a>
