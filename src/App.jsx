@@ -4,7 +4,7 @@ import ResiStatus from "./assets/components/ResiStatus";
 import BackToTop from "./assets/components/BackToTop";
 import About from "./assets/components/About";
 import WorkExperience from "./assets/components/WorkExperience";
-import { ReactLenis } from "lenis/react";
+
 import Skills from "./assets/components/Skills";
 import Projects from "./assets/components/Projects";
 import Cta from "./assets/components/Cta";
@@ -14,7 +14,6 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 function App() {
   return (
     <ThemeProvider>
-      <ReactLenis root></ReactLenis>
       <Header />
       <Main />
       <ResiStatus />
