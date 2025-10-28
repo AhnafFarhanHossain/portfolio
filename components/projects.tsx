@@ -33,7 +33,7 @@ export default function Projects() {
       subtitle: "Website Redesign",
       description:
         "A comprehensive website redesign for PEAK Fit, a premier fitness center and gym based in Montana, United States. Addressed critical layout and structural issues while transforming the overall aesthetics to create a modern, engaging digital experience that reflects the brand's dynamic energy and professionalism.",
-      image: "/peak mockup.png",
+      image: "/peak mockup (2).webp",
       tags: ["Figma", "UI/UX Design", "Website Redesign"],
       links: {},
       featured: false,
