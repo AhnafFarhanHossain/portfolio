@@ -10,6 +10,7 @@ import WorkExperience from "@/components/work-experience";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 
+
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
 
