@@ -3,10 +3,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  devIndicators: false,
   images: {
     unoptimized: true,
   },
-};
+  devIndicators: false
+}
 
-export default nextConfig;
+export default nextConfig
